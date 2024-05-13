@@ -7,7 +7,7 @@ import ProductDetail from "@pages/products/productdetail";
 import Me from "@pages/Me";
 import Pay from "@pages/Pay";
 import Success from "@pages/cart/Success";
-
+import Cart from "@pages/cart/Cart";  // Asegúrate de importar correctamente el componente Cart
 
 export const router = createBrowserRouter([
     {
@@ -41,5 +41,9 @@ export const router = createBrowserRouter([
     {
         path: "/cart/success",
         element: <Success />
+    },
+    {
+        path: "/orders",  // Ruta añadida para "Mis Ordenes"
+        element: <Cart />
     }
 ]);
